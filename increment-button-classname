@@ -30,15 +30,14 @@
 	button.onclick = function(){
 		
 		if (counted < 15) {
-            counted++;
-        } else if (counted = 15) {
-            counted = 0;
-        }
-	list.innerHTML = counted;
-
-	<!--alert(counted);-->
-		
-}
+	            counted++;
+	        } else if (counted = 15) {
+	            counted = 0;
+	        }
+		list.innerHTML = counted;
+	
+		<!--alert(counted);-->
+		}
 </script>
 
 </body>
