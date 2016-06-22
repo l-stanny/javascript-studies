@@ -21,7 +21,7 @@
 
 <script>
 	
-	var counted = 0;<!--establish that 'counted' is a number and its value is initially set to '1'-->
+	var counted = 0;<!--establish that 'counted' is a number and its value is initially set to '0'-->
 	
 	var button = document.getElementsByClassName("button")[0];<!--establish that this is the button being clicked in the function below-->
 	
