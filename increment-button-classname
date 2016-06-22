@@ -10,7 +10,7 @@
 <body>
 
 <ul class="example">
-  <li class="child">0</li>
+    <li class="child">0</li>
 </ul>
 
 <ul>
