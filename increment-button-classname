@@ -18,6 +18,7 @@
 <ul>
     <li>
     	<button class="button">+</button><!--click to increment the value of 'child'-->
+        <button class="button2">-</button><!--click to decrease the value of 'child'-->
     </li>
 </ul>
 
@@ -25,9 +26,11 @@
 	
 	var counted = 0;<!--establish that 'counted' is a number and its value is initially set to '0'-->
 	
-	var button = document.getElementsByClassName("button")[0];<!--establish that this is the button being clicked in the function below-->
+	var button = document.getElementsByClassName("button")[0];<!--establish that this is a button being clicked in the function below-->
 	
-    	var list = document.getElementsByClassName("child")[0]<!--establish that list is the element classed 'child'-->
+	var button2 = document.getElementsByClassName("button2")[0];<!--establish that this is a button being clicked in the function below-->
+	
+    var list = document.getElementsByClassName("child")[0]<!--establish that list is the element classed 'child'-->
 	
 	button.onclick = function(){
 		
@@ -40,8 +43,19 @@
 	
 		<!--alert(counted);-->
 		}
+		
+		button2.onclick = function(){
+		
+		if (counted > 0) {
+	            counted--;
+	        } else if (counted = 0) {
+	            counted = 0;
+	        }
+		list.innerHTML = counted;
+	
+		<!--alert(counted);-->
+		}
 </script>
 
 </body>
 </html>
-
