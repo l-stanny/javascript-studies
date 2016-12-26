@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Increment / Decrement By 15 Button</title>
 <meta name="description" content="Javascript increase or decrease by 15 buttons.">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0; maximum-scale=1.0, width=device-width" />
 <meta name="author" content="Lynn Stanikmas">
 <style>
 * {
