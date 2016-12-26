@@ -1,7 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Increment / Decrement By 15 Button</title>
+<meta name="description" content="Javascript increase or decrease by 15 buttons.">
+<meta name="author" content="Lynn Stanikmas">
 <style>
 * {
 	border:none;
