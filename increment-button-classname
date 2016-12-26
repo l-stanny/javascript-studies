@@ -4,58 +4,143 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
 * {
-	list-style-type: none;
+	border:none;
+	outline:none;
 	}
+	
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	background-image: url('images/symphony.png');
+	}
+
+#wrapper{
+	width:100%;
+	font-family: Helvetica, Arial, sans-serif;
+	}
+
+ol, ul {
+	list-style: none;
+	}
+	
+.example {
+	width:14em;
+	margin:0 auto;
+	background-color:#211911;
+	color:#faf4ef;
+	}
+	
+.child {
+	width:7em;
+	margin:0 auto;
+	text-align:center;
+	height: 3.44em;
+	font-size: 2em;
+	line-height:3.3em;
+	font-weight:bold;
+	margin:3.5em 0 1.25em 0;
+	}
+
+button {
+	width: 3.44em; 
+	height: 3.44em;
+	font-size: 2em;
+	font-weight:bold;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	cursor:pointer;
+	color:#211911;
+	background-color:#caf1f5;
+	float:left;
+	position:relative;
+	display:block;
+	}
+	
+.button2 {
+	margin-left:.1em;
+	}
+	
+.clear {
+		clear:all;
+		}
+		
 </style>
 </head>
 <html>
 <body>
 
-<ul class="example">
-    <li class="child">0</li>
-</ul>
+	<div id="wrapper">
 
-<ul>
-    <li>
-    	<button class="button">+</button><!--click to increment the value of 'child'-->
-        <button class="button2">-</button><!--click to decrease the value of 'child'-->
-    </li>
-</ul>
-
-<script>
-	
-	var counted = 0;<!--establish that 'counted' is a number and its value is initially set to '0'-->
-	
-	var button = document.getElementsByClassName("button")[0];<!--establish that this is a button being clicked in the function below-->
-	
-	var button2 = document.getElementsByClassName("button2")[0];<!--establish that this is a button being clicked in the function below-->
-	
-    var list = document.getElementsByClassName("child")[0]<!--establish that list is the element classed 'child'-->
-	
-	button.onclick = function(){
-		
-		if (counted < 15) {
-	            counted++;
-	        } else if (counted = 15) {
-	            counted = 0;
-	        }
-		list.innerHTML = counted;
-	
-		<!--alert(counted);-->
-		}
-		
-		button2.onclick = function(){
-		
-		if (counted > 0) {
-	            counted--;
-	        } else if (counted = 0) {
-	            counted = 0;
-	        }
-		list.innerHTML = counted;
-	
-		<!--alert(counted);-->
-		}
-</script>
+        <ul class="example">
+            <li class="child">0</li>
+        </ul>
+        
+        <ul class="example">
+            <li>
+                <button class="button">+</button><!--click to increment the value of 'child'-->
+                <button class="button2">-</button><!--click to decrease the value of 'child'-->
+                <div class="clear"></div>
+            </li>
+        </ul>
+        
+        <script>
+            
+            var counted = 0;<!--establish that 'counted' is a number and its value is initially set to '0'-->
+            
+            var button = document.getElementsByClassName("button")[0];<!--establish that this is a button being clicked in the function below-->
+            
+            var button2 = document.getElementsByClassName("button2")[0];<!--establish that this is a button being clicked in the function below-->
+            
+            var list = document.getElementsByClassName("child")[0]<!--establish that list is the element classed 'child'-->
+            
+            button.onclick = function(){
+                
+                if (counted < 15) {
+                        counted++;
+                    } else if (counted = 15) {
+                        counted = 0;
+                    }
+                list.innerHTML = counted;
+            
+                <!--alert(counted);-->
+                }
+                
+                button2.onclick = function(){
+                
+                if (counted > 0) {
+                        counted--;
+                    } else if (counted = 0) {
+                        counted = 0;
+                    }
+                list.innerHTML = counted;
+            
+                <!--alert(counted);-->
+                }
+        </script>
+    </div><!--END wrapper-->
 
 </body>
 </html>
+
