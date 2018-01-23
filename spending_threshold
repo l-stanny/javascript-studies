@@ -1,0 +1,13 @@
+<script type="text/javascript">
+		//keep buying phones without going over a spending threshold
+		function phone(b) {
+			var a = 90 * b + 90;//phone cost including tax
+			var d = 1000;//spending threshold
+				while (a < (d - 94.50)) {		
+					a = a + 94.50;
+					};
+				return a;
+		}
+		var b = phone(0.05);//tax amount argument, total purchase price
+		console.log("$" + b.toFixed(2));
+	</script>
