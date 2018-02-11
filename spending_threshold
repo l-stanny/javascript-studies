@@ -9,5 +9,5 @@
 				return a;
 		}
 		var b = phone(0.05);//tax amount argument, total purchase price
-		console.log("$" + b.toFixed(2));
-	</script>
+		console.log("$" + b.toFixed(2)); //toFixed(2) specifies a 2-place decimal value
+</script>
