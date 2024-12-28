@@ -1,4 +1,4 @@
-business-of-web-dev
+javascript-studies
 ===================
 
-This Business of Web Development git. Hello world.
+These projects are a study in some uses of Javascript.
